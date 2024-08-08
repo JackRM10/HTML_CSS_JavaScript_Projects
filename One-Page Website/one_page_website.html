@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Shakespeare Adventure</title>
         <link rel="stylesheet" href="./css/one_page_website.css">
+        <script src="./js/one_page_website.js" defer></script>
     </head>
     <body>
 
@@ -12,7 +13,7 @@
             <div>
                 <ul>
                     <a href="#home" id="link"><li>HOME</li></a>
-                    <a href="#video tour" id="link"><li>HOME</li></a>
+                    <a href="#video tour" id="link"><li>Video Tour</li></a>
                     <a href="#gallery" id="link"><li>GALLERY</li></a>
                     <a href="#contact" id="link"><li>RESERVATION</li></a>
                 </ul>
@@ -24,7 +25,7 @@
           <div id="home">
             <div>
                 <div>
-                    <span>Shakespeare Adventure</span>
+                    <h2>Shakespeare Adventure</h2>
                     <p>
                     Come on an adventure to see the places Shakespeare lived and his plays were first brought to life.<br>
                     Visit the birth place of the great bard, and travel on to London in his foot steps to see the Globe Theatre.    
@@ -33,6 +34,75 @@
             </div>
           </div>
         <!-- End Home-->
+
+        <!-- Images used to open the lightbox -->
+        <div class="row">
+            <div class="column">
+                <img src="images/Lightbox/thumbnail_1_sm.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="images/Lightbox/thumbnail_2_sm.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="images/Lightbox/thumbnail_7_sm.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="images/Lightbox/thumbnail_8_sm.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+        </div>
+  
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+  
+        <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="images/Lightbox/thumbnail_1.jpg" style="width:100%">
+        </div>
+  
+        <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="images/Lightbox/thumbnail_2.jpg" style="width:100%">
+        </div>
+  
+        <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="images/Lightbox/thumbnail_7.jpg" style="width:100%">
+        </div>
+  
+        <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="images/Lightbox/thumbnail_8.jpg" style="width:100%">
+        </div>
+  
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+        <!-- Caption text -->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+  
+        <!-- Thumbnail image controls -->
+        <div class="column">
+            <img class="demo" src="images/Lightbox/thumbnail_1_sm.jpg" onclick="currentSlide(1)" alt="The Globe">
+        </div>
+  
+        <div class="column">
+            <img class="demo" src="images/Lightbox/thumbnail_2_sm.jpg" onclick="currentSlide(2)" alt="The Globe Stage">
+        </div>
+  
+        <div class="column">
+            <img class="demo" src="images/Lightbox/thumbnail_7_sm.jpg" onclick="currentSlide(3)" alt="William Shakespeare">
+        </div>
+  
+      <div class="column">
+        <img class="demo" src="images/Lightbox/thumbnail_8_sm.jpg" onclick="currentSlide(4)" alt="RSC Stratford-Upon-Avon">
+      </div>
+    </div>
+    </div>
 
         <!-- Video Tour -->
          <div id="video tour">
