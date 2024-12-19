@@ -7,6 +7,6 @@ I built two sample sites
   
   * Shakespeare adventure [https://github.com/JackRM10/HTML_CSS_JavaScript_Projects/tree/main/Shakespeare%20Adventure%20website]
       This is an example webpage for a travel tour. I used css to create a navigation bar, image container and contact form. 
-  * Academy cinemas [https://github.com/JackRM10/Jack-HTML-and-CSS-Projects/blob/main/bootstrap4_project/academy_cinemas.html]
+  * Academy cinemas [https://github.com/JackRM10/HTML_CSS_JavaScript_Projects/blob/main/bootstrap4_project/academy_cinemas.html]
       This webpage was created using bootstrap. Using bootstraps I created a jumbotron, nav bar, cards, anchors and drop down menu.
 
